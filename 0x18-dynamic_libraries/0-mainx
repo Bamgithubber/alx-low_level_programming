@@ -1,0 +1,27 @@
+#include "main.h"
+#include <stdio.h>
+#include <string.h>
+
+size_t _strlen(const char *s)
+{
+    size_t count = 0;
+
+    while (*s != '\0')
+    {
+        count++;
+        s++;
+    }
+
+    return (count);
+}
+
+/**
+ * main - check the code
+ *
+ * Return: Always EXIT_SUCCESS.
+ */
+int main(void)
+{
+    printf("%zu\n", _strlen("My Dyn Lib"));
+    return (EXIT_SUCCESS);
+}
